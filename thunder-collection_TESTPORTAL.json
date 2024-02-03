@@ -1,0 +1,316 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "TESTPORTAL",
+    "dateExported": "2023-12-10T11:01:31.348Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "9539a106-b696-4bf0-b1a4-39b9d06e8710",
+            "name": "Teams",
+            "containerId": "",
+            "created": "2023-12-03T15:08:30.744Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "031f913c-63bb-45a1-8900-d41ce6ef5dc3",
+            "name": "Articles",
+            "containerId": "",
+            "created": "2023-12-04T09:16:14.446Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "778cb2e5-cc8f-4a18-970b-d42c39b5e3d4",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2023-12-05T07:49:12.851Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "7974ade1-c3d4-4b51-ad24-9fd9965c8a00",
+            "name": "Admin",
+            "containerId": "",
+            "created": "2023-12-05T07:50:02.427Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "07226fc0-5df2-4308-9318-a0ca8116a4e6",
+            "name": "Questions",
+            "containerId": "",
+            "created": "2023-12-05T07:50:34.730Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "1aa80ba0-ea5b-45f2-b7a8-dc82c226d0bd",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "9539a106-b696-4bf0-b1a4-39b9d06e8710",
+            "name": "AddTeam",
+            "url": "/admin/addTeam",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-03T11:07:49.116Z",
+            "modified": "2023-12-03T11:08:58.343Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"TEST\",\n  \"heads\": [\n    \"kunal\",\n    \"soni\"\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6ad36e09-69d6-4245-a4e5-0e6aee51b9c7",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "7974ade1-c3d4-4b51-ad24-9fd9965c8a00",
+            "name": "AddRole",
+            "url": "/admin/role",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-05T07:49:22.333Z",
+            "modified": "2023-12-05T07:49:22.333Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"SuperAdmin\",\n  \"permissions\": [\n    \"TEST\", \"Kunal\"\n    ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "35557d4a-0593-4634-99df-066b10330cb6",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "778cb2e5-cc8f-4a18-970b-d42c39b5e3d4",
+            "name": "Login",
+            "url": "/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-05T07:49:28.476Z",
+            "modified": "2023-12-05T07:49:28.476Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"KUNAL TEST\",\n  \"password\": \"1234567890\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "46b1e0f0-d5cf-40e2-a8fa-2e7b800d359b",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "7974ade1-c3d4-4b51-ad24-9fd9965c8a00",
+            "name": "AddPermission",
+            "url": "/admin/permission",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-12-05T07:49:25.212Z",
+            "modified": "2023-12-05T07:49:25.212Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"TEST1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e42c61ed-9167-4433-8141-bb54b7d2bfa2",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "778cb2e5-cc8f-4a18-970b-d42c39b5e3d4",
+            "name": "REGISTER  {auth/register}",
+            "url": "/auth/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-12-05T07:49:30.828Z",
+            "modified": "2023-12-10T08:43:38.371Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"KUNAL TEST\",\n  \"orgId\": \"FUS-SOFT-132\",\n  \"email\": \"kunal.soni@fusionfirst.com\",\n  \"team\": \"Software\",\n  \"password\": \"1234567890\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f48f7727-3a86-4294-8d95-1719150a3802",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "031f913c-63bb-45a1-8900-d41ce6ef5dc3",
+            "name": "GetArticle",
+            "url": "/admin/getArticles",
+            "method": "GET",
+            "sortNum": 35000,
+            "created": "2023-12-04T09:22:19.706Z",
+            "modified": "2023-12-04T09:33:37.988Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9e4f2e6f-8277-4193-a81c-dbad58e3c8eb",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "9539a106-b696-4bf0-b1a4-39b9d06e8710",
+            "name": "UpdateTeam",
+            "url": "/admin/updateTeam/656c661982941184829b8103",
+            "method": "PUT",
+            "sortNum": 35000,
+            "created": "2023-12-05T11:55:31.176Z",
+            "modified": "2023-12-05T12:01:36.439Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"TESTKUNAL\",\n  \"heads\": [\n    \"kunal\",\n    \"soni\"\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "31fd2aff-fa9a-4367-8341-4750b2b6d7ee",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "07226fc0-5df2-4308-9318-a0ca8116a4e6",
+            "name": "AllQuestions",
+            "url": "/admin/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-12-05T08:01:16.706Z",
+            "modified": "2023-12-05T08:01:56.105Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a1e5a478-80b3-4183-a0f5-1ef5ea41cf92",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "9539a106-b696-4bf0-b1a4-39b9d06e8710",
+            "name": "DeleteTeam",
+            "url": "/admin/delTeam/656c661982941184829b8103",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-12-03T15:08:47.510Z",
+            "modified": "2023-12-03T15:52:37.828Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ac257d39-967f-436a-b83c-324cf1401dae",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "031f913c-63bb-45a1-8900-d41ce6ef5dc3",
+            "name": "AddArticle",
+            "url": "/admin/addArticle",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-12-04T09:16:29.929Z",
+            "modified": "2023-12-10T09:15:48.329Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Sample Article\",\n  \"category\": \"Science\",\n  \"paragraph\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\n  \"mcq\": [\n    {\n      \"question\": \"What is the capital of France?\",\n      \"options\": [\"Berlin\", \"Madrid\", \"Paris\", \"Rome\"],\n      \"correctAnswer\": \"Paris\"\n    },\n    {\n      \"question\": \"Which planet is known as the Red Planet?\",\n      \"options\": [\"Venus\", \"Mars\", \"Jupiter\", \"Saturn\"],\n      \"correctAnswer\": \"Mars\"\n    },\n    {\n      \"question\": \"Who wrote 'Romeo and Juliet'?\",\n      \"options\": [\"Charles Dickens\", \"Jane Austen\", \"William Shakespeare\", \"Mark Twain\"],\n      \"correctAnswer\": \"William Shakespeare\"\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0eac49c7-7002-4ebd-90ba-ab624280605a",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "031f913c-63bb-45a1-8900-d41ce6ef5dc3",
+            "name": "UpdateArticle",
+            "url": "/admin/updateArticle/65758a8681525194759642ad",
+            "method": "PUT",
+            "sortNum": 75000,
+            "created": "2023-12-10T09:55:23.426Z",
+            "modified": "2023-12-10T09:57:02.126Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Updated Article\",\n  \"category\": \"Science\",\n  \"paragraph\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\n  \"mcq\": [\n    {\n      \"question\": \"What is the capital of France?\",\n      \"options\": [\"Berlin\", \"Madrid\", \"Paris\", \"Rome\"],\n      \"correctAnswer\": \"Paris\"\n    },\n    {\n      \"question\": \"Which planet is known as the Red Planet?\",\n      \"options\": [\"Venus\", \"Mars\", \"Jupiter\", \"Saturn\"],\n      \"correctAnswer\": \"Mars\"\n    },\n    {\n      \"question\": \"Who wrote 'Romeo and Juliet'?\",\n      \"options\": [\"Charles Dickens\", \"Jane Austen\", \"William Shakespeare\", \"Mark Twain\"],\n      \"correctAnswer\": \"William Shakespeare\"\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2ba48bb6-5a74-4453-b2e5-68210430ce68",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "031f913c-63bb-45a1-8900-d41ce6ef5dc3",
+            "name": "DeleteArticle",
+            "url": "/admin/delArticle/65758a8681525194759642ad",
+            "method": "DELETE",
+            "sortNum": 77500,
+            "created": "2023-12-10T10:07:56.920Z",
+            "modified": "2023-12-10T10:09:02.579Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Updated Article\",\n  \"category\": \"Science\",\n  \"paragraph\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\n  \"mcq\": [\n    {\n      \"question\": \"What is the capital of France?\",\n      \"options\": [\"Berlin\", \"Madrid\", \"Paris\", \"Rome\"],\n      \"correctAnswer\": \"Paris\"\n    },\n    {\n      \"question\": \"Which planet is known as the Red Planet?\",\n      \"options\": [\"Venus\", \"Mars\", \"Jupiter\", \"Saturn\"],\n      \"correctAnswer\": \"Mars\"\n    },\n    {\n      \"question\": \"Who wrote 'Romeo and Juliet'?\",\n      \"options\": [\"Charles Dickens\", \"Jane Austen\", \"William Shakespeare\", \"Mark Twain\"],\n      \"correctAnswer\": \"William Shakespeare\"\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ed0dea1c-c892-4bdf-8633-c69da5f27532",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "07226fc0-5df2-4308-9318-a0ca8116a4e6",
+            "name": "AddQuestion",
+            "url": "/admin/addQuestion",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-12-05T07:50:51.366Z",
+            "modified": "2023-12-10T10:51:39.844Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"question\": \"What is the capital of France?\",\n    \"options\": [\"Berlin\", \"London\", \"Paris\", \"Rome\"],\n    \"correctAnswer\": \"Paris\",\n    \"IsDescriptive\": false,\n    \"category\": \"Geography\",\n    \"image\": \"@C:\\\\Users\\\\kunal.soni\\\\Desktop\\\\Node\\\\Portal\\\\Node\\\\dfd.png\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f0c939bd-6d95-4160-8caa-f657e8d75a00",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "07226fc0-5df2-4308-9318-a0ca8116a4e6",
+            "name": "UpdateQuestion",
+            "url": "/admin/updateQuestion/657580138af6409b36107399",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2023-12-05T07:58:39.738Z",
+            "modified": "2023-12-10T09:09:22.165Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"question\": \"What is the capital of India?\",\n    \"options\": [\"Berlin\", \"London\", \"Paris\", \"Delhi\"],\n    \"correctAnswer\": \"Delhi\",\n    \"IsArticle\": false,\n    \"IsDescriptive\": false,\n    \"category\": \"Political\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3d788679-5585-45e1-8555-47510a1cb2ed",
+            "colId": "a0e1348e-6e46-4dbf-baf8-cdab3b3a6bba",
+            "containerId": "07226fc0-5df2-4308-9318-a0ca8116a4e6",
+            "name": "DelQuestion",
+            "url": "/admin/delQuestion/657580138af6409b36107399",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-12-05T07:59:59.626Z",
+            "modified": "2023-12-10T09:09:50.116Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:8000"
+        },
+        "envId": "2684c60e-b560-481f-b437-aef9d0e8c930"
+    }
+}
